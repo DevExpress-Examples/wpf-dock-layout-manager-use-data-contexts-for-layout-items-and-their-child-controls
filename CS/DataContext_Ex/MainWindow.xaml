@@ -1,4 +1,4 @@
-﻿<Window x:Class="DataContext_Ex.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking" xmlns:local="clr-namespace:DataContext_Ex" Title="MainWindow" Height="449" Width="525">
+<Window x:Class="DataContext_Ex.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking" xmlns:local="clr-namespace:DataContext_Ex" Title="MainWindow" Height="449" Width="525">
     <dxd:DockLayoutManager x:Name="dm1">
         <!--Set DataContext for DockLayoutManager. By default, this DataContext will be inherited by all child elements-->
         <dxd:DockLayoutManager.DataContext>
@@ -6,7 +6,7 @@
         </dxd:DockLayoutManager.DataContext>
 
         <dxd:LayoutGroup Orientation="Vertical">
-            <dxd:LayoutPanel x:Name="panelDescription" Caption="Description" Height="70">
+            <dxd:LayoutPanel x:Name="panelDescription" Caption="Description" ItemHeight="70">
                 <dxd:LayoutGroup Orientation="Vertical">
                     <!--Define a label and bind its caption to MyDescriptionClass.Description.
                     A MyDescriptionClass object is assigned to the DockLayoutManager.DataContext, and this DataContext is inherited by all layout items.
