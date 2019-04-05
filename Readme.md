@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [Class1.cs](./CS/DataContext_Ex/Class1.cs) (VB: [Class1.vb](./VB/DataContext_Ex/Class1.vb))
-* [MainWindow.xaml](./CS/DataContext_Ex/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/DataContext_Ex/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/DataContext_Ex/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DataContext_Ex/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/DataContext_Ex/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/DataContext_Ex/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to provide and use DataContexts for layout items and their controls
