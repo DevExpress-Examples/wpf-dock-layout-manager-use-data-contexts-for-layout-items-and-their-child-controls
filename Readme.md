@@ -33,3 +33,6 @@ Another [DataContext](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.Doc
 * [MainWindow.xaml](./CS/DataContext_Ex/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DataContext_Ex/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/DataContext_Ex/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/DataContext_Ex/MainWindow.xaml.vb))
 <!-- default file list end -->
+
+## Documentation
+* [Dock Items](http://docs.devexpress.devx/WPF/7209/controls-and-libraries/layout-management/dock-windows/dock-items)
