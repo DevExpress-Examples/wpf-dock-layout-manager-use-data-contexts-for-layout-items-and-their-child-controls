@@ -21,7 +21,7 @@
                     <!--
                         Define a label and bind its caption to MyDescriptionClass.Description.
                         A MyDescriptionClass object is assigned to the DockLayoutManager.DataContext, and this DataContext is inherited by all layout items.
-                        Since the label is not a FrameworkElement, the binding statement must be created using the explicit syntax.
+                        Since the label is not a FrameworkElement, the binding statement must be created using explicit syntax.
                     -->
                     <dxd:LabelItem Caption="{Binding Path=DataContext.Description, RelativeSource={RelativeSource Mode=Self}}" />
                 </dxd:LayoutGroup>
