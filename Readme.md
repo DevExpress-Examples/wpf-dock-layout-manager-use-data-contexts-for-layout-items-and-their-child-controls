@@ -17,7 +17,7 @@ Text="{Binding Path=DataContext.Description, RelativeSource={RelativeSource Mode
 
 ```
 
-Another **DataContext** is set for the _panelPerson1_ panel, overriding the default **DataContext** (that is inherited from the [DockLayoutManager](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.DockLayoutManager)). TextBox controls are FrameworkElements that support the standard binding mechanism. You can use an implicit and explicit syntaxes to bound them to properties from this **DataContext**:
+Another **DataContext** is set for the _panelPerson1_ panel, overriding the default **DataContext** (which is inherited from the [DockLayoutManager](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.DockLayoutManager)). TextBox controls are FrameworkElements that support the standard binding mechanism. You can use implicit and explicit syntaxes to bind them to properties from this **DataContext**:
 
 ```Xaml
 Text="{Binding Title}"
