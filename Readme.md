@@ -24,7 +24,7 @@ Text="{Binding Title}"
 
 ```
 
-Another [DataContext](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.DockLayoutManager) is set for a group that display _panelPerson2Name_ and _panelPerson2Address_ panels. These panels and their elements inherit the **DataContext**. You can use the implicit syntax to bound TextBox controls that placed in these panels to properties from the inherited [DataContext](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.DockLayoutManager).
+Another [DataContext](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.DockLayoutManager) is set for a group that displays _panelPerson2Name_ and _panelPerson2Address_ panels. These panels and their elements inherit the **DataContext**. You can use implicit syntax to bind TextBox controls that are placed in these panels to properties from the inherited [DataContext](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.DockLayoutManager).
 
 <!-- default file list -->
 ## Files to Look At
