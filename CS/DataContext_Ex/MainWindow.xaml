@@ -42,7 +42,8 @@
                             LastName="Lawrence" />
                     </dxd:LayoutPanel.DataContext>
                     <!--
-                        Bind to properties on the DataContext. The DataContext is inherited from panelPerson1.
+                        Binds to properties from the DataContext that is inherited from panelPerson1.
+
                         An implicit syntax for creating binding statements can be used, as TextBox controls are FrameworkElements.
                     -->
                     <dxd:LayoutGroup Orientation="Vertical">
