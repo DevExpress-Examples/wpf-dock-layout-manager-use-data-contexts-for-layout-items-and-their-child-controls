@@ -81,7 +81,8 @@
                     </dxd:LayoutGroup.DataContext>
 
                     <!--
-                        Bind to properties on the DataContext. The DataContext is inherited from layoutGroup3.
+                        Bind to properties from the DataContext that is inherited from layoutGroup3.
+
                         An implicit syntax for creating binding statements can be used, as TextBox controls are FrameworkElements.
                     -->
                     <dxd:LayoutPanel x:Name="panelPerson2Name" Caption="Person 2 (name)">
