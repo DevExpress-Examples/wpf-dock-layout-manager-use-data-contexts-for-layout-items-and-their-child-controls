@@ -30,7 +30,8 @@
             <dxd:LayoutGroup Orientation="Horizontal">
                 <!--  The panel that has its own DataContext  -->
                 <dxd:LayoutPanel x:Name="panelPerson1" Caption="Person 1">
-                    <!--  Provide DataContext for this panel and its child controls  -->
+                    <!--  Defines DataContext for this panel and its child controls  -->
+
                     <dxd:LayoutPanel.DataContext>
                         <local:Person
                             Title="Mr"
