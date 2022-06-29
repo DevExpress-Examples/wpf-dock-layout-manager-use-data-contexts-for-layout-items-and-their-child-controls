@@ -8,7 +8,8 @@ This example uses **DataContexts** with layout items.
 
 <img src="https://user-images.githubusercontent.com/12169834/175366187-e8830ef4-f547-4700-90ff-f9a375fd7156.png" width=575px/>
 
-In this example, a **DataContext** is set for the [DockLayoutManager](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.DockLayoutManager). A label (FixedItem) that is positioned within a top panel is bound to a property on this **DataContext**. 
+In this example, a **DataContext** is set for the [DockLayoutManager](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.DockLayoutManager). A label (FixedItem) that is positioned within a top panel is bound to a property from this **DataContext**. 
+
 
 The FixedItem object is not a FrameworkElement. To bind it to the inherited **DataContext**, the Binding.Path attribute must be specified with explicit syntax, plus Relative Source Mode must be set to **Self**:
 
