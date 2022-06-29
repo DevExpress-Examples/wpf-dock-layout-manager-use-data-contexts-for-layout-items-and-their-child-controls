@@ -69,7 +69,8 @@
                 </dxd:LayoutPanel>
                 <!--  The group that propagates its DataContext to its child panels and their controls  -->
                 <dxd:LayoutGroup x:Name="layoutGroup3" Orientation="Vertical">
-                    <!--  Provide DataContext for this group, its child panels and their controls  -->
+                    <!--  Defines DataContext for this group, its child panels and their controls  -->
+
                     <dxd:LayoutGroup.DataContext>
                         <local:Person
                             Title="Ms."
