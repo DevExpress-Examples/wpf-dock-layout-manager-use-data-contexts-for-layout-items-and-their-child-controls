@@ -1,96 +1,123 @@
-<Window x:Class="DataContext_Ex.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking" xmlns:local="clr-namespace:DataContext_Ex" Title="MainWindow" Height="449" Width="525">
+<Window
+    x:Class="DataContext_Ex.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking"
+    xmlns:local="clr-namespace:DataContext_Ex"
+    Title="MainWindow"
+    Width="525"
+    Height="449">
     <dxd:DockLayoutManager x:Name="dm1">
-        <!--Set DataContext for DockLayoutManager. By default, this DataContext will be inherited by all child elements-->
+        <!--  Set DataContext for DockLayoutManager. DockLayoutManager's child elements inherit this DataContext -->
+
         <dxd:DockLayoutManager.DataContext>
             <local:MyDescriptionClass Description="This example demonstrates how to bind layout elements to binding sources" />
         </dxd:DockLayoutManager.DataContext>
-
         <dxd:LayoutGroup Orientation="Vertical">
-            <dxd:LayoutPanel x:Name="panelDescription" Caption="Description" ItemHeight="70">
+            <dxd:LayoutPanel
+                x:Name="panelDescription"
+                Caption="Description"
+                ItemHeight="70">
                 <dxd:LayoutGroup Orientation="Vertical">
-                    <!--Define a label and bind its caption to MyDescriptionClass.Description.
-                    A MyDescriptionClass object is assigned to the DockLayoutManager.DataContext, and this DataContext is inherited by all layout items.
-                    Since the label is not a FrameworkElement, the binding statement must be created using the explicit syntax.
+                    <!--
+                        Define a label and bind its caption to MyDescriptionClass.Description.
+                        A MyDescriptionClass object is assigned to the DockLayoutManager.DataContext, and this DataContext is inherited by all layout items.
+                        Since the label is not a FrameworkElement, the binding statement must be created using explicit syntax.
                     -->
                     <dxd:LabelItem Caption="{Binding Path=DataContext.Description, RelativeSource={RelativeSource Mode=Self}}" />
                 </dxd:LayoutGroup>
             </dxd:LayoutPanel>
-
             <dxd:LayoutGroup Orientation="Horizontal">
-
-                <!--The panel that has its own DataContext-->
+                <!--  The panel that has its own DataContext  -->
                 <dxd:LayoutPanel x:Name="panelPerson1" Caption="Person 1">
-                    <!--Provide DataContext for this panel and its child controls-->
+                    <!--  Defines DataContext for this panel and its child controls  -->
+
                     <dxd:LayoutPanel.DataContext>
-                        <local:Person Title="Mr" FirstName="David" LastName="Lawrence" Country="USA" City="Denver" HomePhone="303-555-5555" />
+                        <local:Person
+                            Title="Mr"
+                            City="Denver"
+                            Country="USA"
+                            FirstName="David"
+                            HomePhone="303-555-5555"
+                            LastName="Lawrence" />
                     </dxd:LayoutPanel.DataContext>
-                    <!--Bind to properties on the DataContext. The DataContext is inherited from panelPerson1.
-                    An implicit syntax for creating binding statements can be used, as TextBox controls are FrameworkElements.
+                    <!--
+                        Binds to properties from the DataContext that is inherited from panelPerson1.
+
+                        An implicit syntax for creating binding statements can be used, as TextBox controls are FrameworkElements.
                     -->
                     <dxd:LayoutGroup Orientation="Vertical">
                         <dxd:LayoutControlItem Caption="Title">
-                            <TextBox Text="{Binding Title}"></TextBox>
+                            <TextBox Text="{Binding Title}" />
                         </dxd:LayoutControlItem>
                         <dxd:LayoutControlItem Caption="FirstName">
-                            <TextBox Text="{Binding FirstName}"></TextBox>
+                            <TextBox Text="{Binding FirstName}" />
                         </dxd:LayoutControlItem>
                         <dxd:LayoutControlItem Caption="LastName">
-                            <TextBox Text="{Binding LastName}"></TextBox>
+                            <TextBox Text="{Binding LastName}" />
                         </dxd:LayoutControlItem>
                         <dxd:LayoutControlItem Caption="Country">
-                            <TextBox Text="{Binding Country}"></TextBox>
+                            <TextBox Text="{Binding Country}" />
                         </dxd:LayoutControlItem>
                         <dxd:LayoutControlItem Caption="City">
-                            <TextBox Text="{Binding City}"></TextBox>
+                            <TextBox Text="{Binding City}" />
                         </dxd:LayoutControlItem>
                         <dxd:LayoutControlItem Caption="Phone">
-                            <TextBox Text="{Binding HomePhone}"></TextBox>
+                            <TextBox Text="{Binding HomePhone}" />
                         </dxd:LayoutControlItem>
                     </dxd:LayoutGroup>
                 </dxd:LayoutPanel>
-
-                <!--The group that propagates its DataContext to its child panels and their controls-->
+                <!--  The group that propagates its DataContext to its child panels and their controls  -->
                 <dxd:LayoutGroup x:Name="layoutGroup3" Orientation="Vertical">
-                    <!--Provide DataContext for this group, its child panels and their controls-->
+                    <!--  Defines DataContext for this group, its child panels and their controls  -->
+
                     <dxd:LayoutGroup.DataContext>
-                        <local:Person Title="Ms." FirstName="Susan" LastName="Boyle" Country="USA" City="Santa Barbara" HomePhone="805-787-7788" />
+                        <local:Person
+                            Title="Ms."
+                            City="Santa Barbara"
+                            Country="USA"
+                            FirstName="Susan"
+                            HomePhone="805-787-7788"
+                            LastName="Boyle" />
                     </dxd:LayoutGroup.DataContext>
 
-                    <!--Bind to properties on the DataContext. The DataContext is inherited from layoutGroup3.
-                    An implicit syntax for creating binding statements can be used, as TextBox controls are FrameworkElements.
+                    <!--
+                        Bind to properties from the DataContext that is inherited from layoutGroup3.
+
+                        An implicit syntax for creating binding statements can be used, as TextBox controls are FrameworkElements.
                     -->
                     <dxd:LayoutPanel x:Name="panelPerson2Name" Caption="Person 2 (name)">
                         <dxd:LayoutGroup Orientation="Vertical">
                             <dxd:LayoutControlItem Caption="Title">
-                                <TextBox Text="{Binding Title}"></TextBox>
+                                <TextBox Text="{Binding Title}" />
                             </dxd:LayoutControlItem>
                             <dxd:LayoutControlItem Caption="FirstName">
-                                <TextBox Text="{Binding FirstName}"></TextBox>
+                                <TextBox Text="{Binding FirstName}" />
                             </dxd:LayoutControlItem>
                             <dxd:LayoutControlItem Caption="LastName">
-                                <TextBox Text="{Binding LastName}"></TextBox>
+                                <TextBox Text="{Binding LastName}" />
                             </dxd:LayoutControlItem>
                         </dxd:LayoutGroup>
                     </dxd:LayoutPanel>
+                    <!--
+                        Bind to properties from the DataContext that is inherited from layoutGroup3.
 
-                    <!--Bind to properties on the DataContext. The DataContext is inherited from layoutGroup3.
-                    An implicit syntax for creating binding statements can be used, as TextBox controls are FrameworkElements.
+                        An implicit syntax for creating binding statements can be used, as TextBox controls are FrameworkElements.
                     -->
                     <dxd:LayoutPanel x:Name="panelPerson2Address" Caption="Person 2 (address)">
                         <dxd:LayoutGroup Orientation="Vertical">
                             <dxd:LayoutControlItem Caption="Country">
-                                <TextBox Text="{Binding Country}"></TextBox>
+                                <TextBox Text="{Binding Country}" />
                             </dxd:LayoutControlItem>
                             <dxd:LayoutControlItem Caption="City">
-                                <TextBox Text="{Binding City}"></TextBox>
+                                <TextBox Text="{Binding City}" />
                             </dxd:LayoutControlItem>
                             <dxd:LayoutControlItem Caption="Phone">
-                                <TextBox Text="{Binding HomePhone}"></TextBox>
+                                <TextBox Text="{Binding HomePhone}" />
                             </dxd:LayoutControlItem>
                         </dxd:LayoutGroup>
                     </dxd:LayoutPanel>
                 </dxd:LayoutGroup>
-
             </dxd:LayoutGroup>
         </dxd:LayoutGroup>
     </dxd:DockLayoutManager>
