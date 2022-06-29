@@ -8,7 +8,8 @@
     Width="525"
     Height="449">
     <dxd:DockLayoutManager x:Name="dm1">
-        <!--  Set DataContext for DockLayoutManager. By default, this DataContext will be inherited by all child elements  -->
+        <!--  Set DataContext for DockLayoutManager. DockLayoutManager's child elements inherit this DataContext -->
+
         <dxd:DockLayoutManager.DataContext>
             <local:MyDescriptionClass Description="This example demonstrates how to bind layout elements to binding sources" />
         </dxd:DockLayoutManager.DataContext>
