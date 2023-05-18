@@ -37,4 +37,4 @@ Another [DataContext](https://docs.devexpress.com/WPF/DevExpress.Xpf.Docking.Doc
 <!-- default file list end -->
 
 ## Documentation
-* [Dock Items](http://docs.devexpress.devx/WPF/7209/controls-and-libraries/layout-management/dock-windows/dock-items)
+* [Dock Items](http://docs.devexpress.com/WPF/7209/controls-and-libraries/layout-management/dock-windows/dock-items)
